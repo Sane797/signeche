@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+    }
+
+    header h2 {
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .videos {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    /* Vertical 9:16 Format */
+    .video-card {
+      width: 280px;
+      aspect-ratio: 9 / 16;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .video-card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 600px) {
+      .video-card {
+        width: 90%;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Signeche</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="personal.html">Personal Details</a>
+      <a href="works.html">Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>My Art Gallery</h1>
+    <p>Video Projects</p>
+
+    <div class="videos">
+
+      <div class="video-card"><video controls><source src="video1.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video2.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video3.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video4.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video5.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video6.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video7.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video8.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video9.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video10.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video11.mp4" type="video/mp4"></video></div>
+      <div class="video-card"><video controls><source src="video12.mp4" type="video/mp4"></video></div>
+
+    </div>
+  </div>
+
+</body>
+</html>
