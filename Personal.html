@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Details</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      gap: 60px;
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+      align-items: flex-start;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    .hero-content p {
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .hero-image {
+      flex: 0 0 280px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 768px) {
+
+      .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 40px;
+      }
+
+      .hero-content h1 {
+        font-size: 26px;
+        text-align: center;
+      }
+
+      .hero-content {
+        text-align: left;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      nav {
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="signeche logo.png" alt="Signeche Logo" width="120">
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="works.html">Works</a>
+      <a href="companies.html">Previous Companies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+
+    <div class="hero-content">
+
+      <h1>Saneesh P S</h1>
+      <p><strong>Creative Director | AI Content Creator | Project Head</strong></p>
+
+      <p>
+        I am a results-driven Project Head with expertise in leading cross-functional teams and delivering projects on time and within scope. I align strategic vision with structured execution, focusing on innovation, efficiency, and measurable outcomes.
+      </p>
+
+      <div class="section-title">Education</div>
+
+      <p><strong>BA Psychology (2021 – 2024)</strong><br>
+      Indira Gandhi Open University, Delhi</p>
+
+      <p><strong>Junior Diploma in Co-operation (2018 – 2019)</strong><br>
+      Co-operative Training Center Karani, Wayanad</p>
+
+
+      <div class="section-title">Core Skills</div>
+      <ul>
+        <li>Leadership & Team Management</li>
+        <li>Strategic Planning & Innovation</li>
+        <li>Effective Communication & Public Relations</li>
+        <li>Teaching & Mentoring</li>
+      </ul>
+
+      <div class="section-title">Technical Skills</div>
+      <ul>
+        <li>AI Tools: Gemini AI, Meta AI, Kling AI, Grok AI, ElevenLabs</li>
+        <li>Design: Photoshop CC, Lightroom, Procreate, Figma, Canva</li>
+        <li>Video: DaVinci Resolve, CapCut, LightCut</li>
+        <li>Marketing: Meta Ads, Analytics & Optimization</li>
+        <li>Web: HTML, CSS, GitHub, VS Code, SEO Basics</li>
+      </ul>
+
+      <div class="section-title">Languages</div>
+      <p>Malayalam (Fluent), English (Fluent), Tamil (Fluent), Hindi (Basic)</p>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="signeche logo.png" alt="Signeche Logo">
+    </div>
+
+  </div>
+
+</body>
+</html>
